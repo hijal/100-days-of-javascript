@@ -31,7 +31,10 @@ $(document).ready(function () {
       color += character;
     }
     generatedColor.textContent = color;
+    generatedColor.style.color = color;
+    generatedColor.style.border = `1px solid ${color}`;
 
+    $('.app-header').css('color', 'white');
     $('body').css('background', color);
   }
 
