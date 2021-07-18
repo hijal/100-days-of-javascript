@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <title>Random Color Generator App</title>
+  </head>
+  <body>
+    <div class="container text-center text-primary mt-4">
+      <h1>Random Color Generator Application</h1>
+      <hr />
+    </div>
+
+    <div class="text-center d-flex justify-content-center">
+      <div class="card" style="width: 18rem">
+        <div class="card-header">
+          <div class="text-center font-weight-bold text-info">
+            <p
+              class="p-2"
+              id="generated-color"
+              style="border: 1px solid #000; background-color: #fff"
+            >
+              #ffffff
+            </p>
+
+            <div class="float-right">
+              <button
+                type="button"
+                id="copy-clipboard"
+                class="btn btn-sm btn-outline-info"
+              >
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <button type="button" id="color-generator" class="btn btn-primary">
+            Generate Color
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
