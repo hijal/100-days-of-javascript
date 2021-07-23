@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <title>OTP Generator!</title>
+    <style>
+      #copy {
+        margin-top: -13%;
+        margin-left: 94%;
+      }
+
+      #generatedNumber {
+        border: 2px solid #17a2b8 !important;
+        width: 20%;
+        margin: 0 auto !important;
+      }
+
+      @media screen and (max-width: 801px) {
+        #copy {
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-2">
+      <h1 class="text-center text-info">OTP Generator App</h1>
+      <hr />
+
+      <div class="d-flex justify-content-center">
+        <div class="card border-success mb-3 text-center w-50">
+          <div class="card-header">
+            <p
+              id="generatedNumber"
+              class="text-center text-warning mt-2 border-info"
+            ></p>
+            <button
+              type="button"
+              class="btn btn-info btn-sm mt-2"
+              id="copy-clipboard"
+            >
+              copy
+            </button>
+          </div>
+          <div class="card-body">
+            <button class="btn btn-primary" type="button" id="number-generator">
+              <span role="status" aria-hidden="true" id="spinner-add"></span>
+              Loading...
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
