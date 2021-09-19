@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#canvasId {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to right, #4ca1af, #2c3e50);
+  background: -webkit-linear-gradient(to right, #4ca1af, #2c3e50);
+}
