@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+
+		<title>Table add/remove row and col dynamically</title>
+		<style>
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			td,
+			th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+
+			.remove {
+				font-size: 0.65em;
+				float: right;
+				cursor: pointer;
+				margin-top: -0.5em;
+				color: #aaa;
+			}
+
+			.remove:hover {
+				color: #f1a1a1;
+			}
+			.add {
+				font-size: 0.65em;
+				float: right;
+				cursor: pointer;
+				margin-top: -0.5em;
+				color: #aaa;
+			}
+
+			.add:hover {
+				color: #f1f0a1;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Choose where you gonna add</h1>
+		<select name="" id="selected-condition">
+			<option value="after">After</option>
+			<option value="before">Before</option>
+		</select>
+		<br />
+		<br />
+		<table id="testTable" style="width: 50%">
+			<thead>
+				<tr>
+					<th>
+						<div class="th-path-name">
+							<select name="" id="">
+								<option value="">AA</option>
+								<option value="">BB</option>
+								<option value="">CC</option>
+							</select>
+							<span class="remove" onclick="deleteRowCol(this)">[x]</span>
+							<span class="add" onclick="addRowCol(this)">[+]</span>
+						</div>
+					</th>
+					<th>
+						<div class="th-path-name">
+							<select name="" id="">
+								<option value="">AA</option>
+								<option value="">BB</option>
+								<option value="" selected>CC</option>
+							</select>
+							<span class="remove" onclick="deleteRowCol(this)">[x]</span>
+							<span class="add" onclick="addRowCol(this)">[+]</span>
+						</div>
+					</th>
+					<th>
+						<div class="th-path-name">
+							<select name="" id="">
+								<option value="">AA</option>
+								<option value="" selected>BB</option>
+								<option value="">CC</option>
+							</select>
+							<span class="remove" onclick="deleteRowCol(this)">[x]</span>
+							<span class="add" onclick="addRowCol(this)">[+]</span>
+						</div>
+					</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>
+						<select>
+							<option value="">10 AM</option>
+							<option value="">10 AM</option>
+							<option value="">10 AM</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option value="">10 AM</option>
+							<option value="">10 AM</option>
+							<option value="">10 AM</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option value="">10 AM</option>
+							<option value="">10 AM</option>
+							<option value="">10 AM</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
