@@ -26,6 +26,7 @@ button {
 	background-color: #ffaf01;
 	border-radius: 10px;
 	font-size: 1rem;
+	text-transform: capitalize;
 	cursor: pointer;
 }
 
@@ -85,8 +86,8 @@ button {
 	right: -6px;
 	background-color: #00ff37;
 	width: 30px;
-	padding: .1rem;
-    margin: 0;
+	padding: 0.1rem;
+	margin: 0;
 	border-radius: 50%;
 	text-align: center;
 }
