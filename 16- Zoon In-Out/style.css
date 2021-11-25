@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fffc00;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
