@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	background-color: #18cff0;
+	background-image: linear-gradient(315deg, #18cff0 0%, #f0f8ff 74%);
+	font-family: 'Londrina Solid', cursive;
+}
+
+.container {
+	border-radius: 50px;
+	background: #0b22a5;
+	box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5);
+	padding: 5rem;
+	color: whitesmoke;
+	cursor: default;
+}
+
+.clock-title {
+	font-size: 2.2rem;
+}
+
+.digital-clock {
+	font-size: 4rem;
+	margin-top: 1.5rem;
+	letter-spacing: 0.3rem;
+}
