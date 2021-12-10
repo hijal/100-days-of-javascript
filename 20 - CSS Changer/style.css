@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+/* :root {
+	--padding: 10px;
+	--blur: 0px;
+	--base: #ff0000;
+	--width: 60%;
+	--border-radius: 5px;
+} */
+
+:root {
+	--padding: 10px;
+	--blur: 0px;
+	--base: rgb(255, 0, 0);
+	--width: 60%;
+	--border-radius: 5px;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	background: #e98585;
+}
+
+img {
+	width: var(--width);
+	height: 80%;
+	margin-top: 1rem;
+	padding: var(--padding);
+	filter: blur(var(--blur));
+	background-color: var(--base);
+	border-radius: var(--border-radius);
+}
+
+.heading {
+	font-size: 2rem;
+	font-weight: 800;
+	color: #1658d3;
+}
+.icon {
+	font-size: 30px;
+	margin: 0 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.css-controller {
+	padding: 1rem 0px 1rem 0px;
+}
+
+label {
+	padding-left: 1rem;
+	font-size: 1rem;
+}
+
+.container {
+	border-radius: 50px;
+	background-color: rgb(182, 12, 173);
+	padding: 2rem;
+	box-shadow: 20px 20px 60px #d9a5b9 -20px -20px 60px #f5e6e6;
+}
